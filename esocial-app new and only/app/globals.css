@@ -1,0 +1,24 @@
+:root{--bg:#f3f5f9;--card:#fff;--tx:#111827;--mu:#6b7280;--pr:#4a6fdc;--pr2:#e8edfb;--bd:#e5e7eb;--ok:#16a34a;--er:#dc2626}
+@media(prefers-color-scheme:dark){:root{--bg:#0f1420;--card:#182033;--tx:#f1f5f9;--mu:#94a3b8;--pr:#6b8cf0;--pr2:#22305a;--bd:#2a3550}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:system-ui,sans-serif;font-size:15px}
+main{padding:14px;max-width:640px;margin:0 auto}
+.crumb{color:var(--mu);margin:4px 0 12px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px;margin-bottom:12px}
+.row{display:flex;align-items:center;gap:14px}
+.g{flex:1;min-width:0}.g small,.mu{color:var(--mu);font-size:13px}.g b{display:block;font-size:22px}
+.btn{background:var(--pr);color:#fff;border:0;border-radius:8px;padding:11px 16px;font:inherit;font-weight:600;cursor:pointer;text-decoration:none;display:inline-block}
+.btn.w{width:100%;text-align:center}.btn.d{background:var(--er)}.btn.o{background:var(--pr2);color:var(--pr)}
+label{display:block;font-weight:600;margin:12px 0 6px}
+input,select,textarea{width:100%;padding:12px;border:1px solid var(--bd);border-radius:8px;background:var(--bg);color:var(--tx);font:inherit}
+h3{margin:0 0 10px}
+.item{border-top:1px solid var(--bd);padding:12px 0}.item:first-of-type{border-top:0}
+.top{display:flex;justify-content:space-between;gap:10px;align-items:start}
+.tag{display:inline-block;background:var(--pr2);color:var(--pr);border-radius:6px;padding:2px 8px;font-size:12px;font-weight:600}
+.tag.s{background:#fee2e2;color:var(--er)}.tag.a{background:#dcfce7;color:var(--ok)}
+.cred{background:var(--bg);border:1px dashed var(--pr);border-radius:8px;padding:10px;margin-top:8px;font-size:14px;word-break:break-all}
+.lock{color:var(--mu);font-size:13px;margin-top:6px}
+.err{color:var(--er);font-size:14px;min-height:20px}
+.ab{max-width:400px;margin:0 auto;padding-top:24px}
+.ab>.logo{text-align:center;font-size:30px;margin-bottom:18px;font-weight:700;color:var(--pr)}
+.ab>.logo small{display:block;font-size:12px;color:var(--mu);font-weight:500}
